@@ -21,3 +21,7 @@ Algumas anotações feitas durante o estudo e que podem ajudar no entendimento d
 ### Sobre a tecnologia
 
 Utilizaremos o Bun como tecnologia no back-end, que é uma alternativa ao Node e ao Deno. O Bun é construído em cima do motor do Safari, o JSCore, e possui melhor performance e menos configurações necessárias. Além disso, o código escrito com o Bun é compatível com as APIs do Node. O projeto e as rotas HTTP serão criadas utilizando o framework ElysiaJS.
+
+### Drizzle ORM
+
+O [Drizzle](https://orm.drizzle.team/) é agnóstico de runtime, o que significa que pode ser executado em qualquer ambiente que execute JavaScript. Ele não cria uma ponte entre a aplicação e o banco de dados, o que pode ser vantajoso em casos de uso mais complexos. O Drizzle segue uma API mais próxima de um Query Builder, permitindo que escrevamos queries de forma semelhante ao SQL.

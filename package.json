@@ -1,18 +1,24 @@
 {
   "name": "pizzashop-api",
+  "version": "0.0.1",
   "module": "src/http/server.ts",
   "type": "module",
   "scripts": {
     "dev": "bun --watch src/http/server.ts",
     "build": "bun build src/http/server.ts",
     "start": "NODE_ENV=production bun src/http/server.ts",
-    "test": "bun test"
+    "test": "bun test",
+    "generate": "drizzle-kit generate:pg"
   },
   "dependencies": {
-    "elysia": "^0.8.17"
+    "@paralleldrive/cuid2": "^2.2.2",
+    "drizzle-orm": "^0.29.3",
+    "elysia": "^0.8.17",
+    "postgres": "^3.4.3"
   },
   "devDependencies": {
-    "typescript": "^5.0.0",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "drizzle-kit": "^0.20.14",
+    "typescript": "^5.0.0"
   }
 }
