@@ -25,3 +25,7 @@ Utilizaremos o Bun como tecnologia no back-end, que é uma alternativa ao Node e
 ### Drizzle ORM
 
 O [Drizzle](https://orm.drizzle.team/) é agnóstico de runtime, o que significa que pode ser executado em qualquer ambiente que execute JavaScript. Ele não cria uma ponte entre a aplicação e o banco de dados, o que pode ser vantajoso em casos de uso mais complexos. O Drizzle segue uma API mais próxima de um Query Builder, permitindo que escrevamos queries de forma semelhante ao SQL.
+
+### Estratégia de autenticação
+
+Em vez de usar a autenticação convencional por e-mail e senha, é implementado uma estratégia chamada "password-less". Essa estratégia permite que os usuários façam login sem a necessidade de uma senha. Utiliza-se a estratégia do "Magic Link", onde o usuário insere seu e-mail e recebe um link de autenticação por e-mail. Ao clicar no link, o usuário é redirecionado para a aplicação já autenticado. Essa abordagem é mais segura, pois não precisa-se armazenar senhas sensíveis no banco de dados. 
