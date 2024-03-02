@@ -1,4 +1,4 @@
-# 🍕 Pizza Shop - API
+# Pizza Shop - API
 
 Uma API para um painel de gerenciamento de pedidos estilo IFood onde o administrador do restaurante pode controlar seus pedidos e acompanhar sua progressão.
 
