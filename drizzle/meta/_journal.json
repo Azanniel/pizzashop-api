@@ -43,6 +43,13 @@
       "when": 1709054039904,
       "tag": "0005_same_zaladane",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1710471206783,
+      "tag": "0006_fixed_vermin",
+      "breakpoints": true
     }
   ]
 }
