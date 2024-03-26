@@ -17,7 +17,10 @@ export const approveOrder = new Elysia().use(auth).patch(
 
     const order = await db.query.orders.findFirst({
       where(fields, operators) {
-        return operators.eq(fields.id, orderId)
+        return operators.and(
+          operators.eq(fields.id, orderId),
+          operators.eq(fields.restaurantId, restaurantId),
+        )
       },
     })
 
