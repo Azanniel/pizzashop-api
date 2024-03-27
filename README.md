@@ -1,4 +1,10 @@
-# Pizza Shop - API
+<div align='center'>
+  <h1>
+    🍕 Pizza Shop - API
+  </h1>
+
+  > Projeto contruído para servir como api do projeto PizzaShop Web
+</div>
 
 Uma API para um painel de gerenciamento de pedidos estilo IFood onde o administrador do restaurante pode controlar seus pedidos e acompanhar sua progressão.
 
