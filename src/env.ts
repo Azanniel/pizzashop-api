@@ -7,4 +7,13 @@ const envSchema = z.object({
   DATABASE_URL: z.string().url().min(1),
 })
 
-export const env = envSchema.parse(process.env)
+const _env = envSchema.safeParse(process.env)
+
+if (!_env.success) {
+  console.error('❌ Invalid environment variables:')
+  console.error(_env.error.issues)
+
+  process.exit()
+}
+
+export const env = _env.data
